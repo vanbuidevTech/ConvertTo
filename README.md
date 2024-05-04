@@ -16,19 +16,13 @@ Convert là một ứng dụng miễn phí cho phép bạn dễ dàng chuyển �
 
 ## Hướng dẫn cài đặt và sử dụng
 
-1. Tải xuống và cài đặt ứng dụng Convert từ trang web chính thức.
-2. Mở ứng dụng và chọn tệp PDF hoặc Docx bạn muốn chuyển đổi.
-3. Chọn định dạng đầu ra mong muốn (PDF hoặc Docx).
-4. Nhấn nút "Chuyển đổi" và chờ đợi quá trình chuyển đổi hoàn thành.
-5. Sau khi quá trình chuyển đổi hoàn thành, tệp mới sẽ được lưu trữ trong thư mục đầu ra đã chỉ định.
+- Comming soon
 
 ![Convert Process](images/convert-process.png)
 
 ## Yêu cầu hệ thống
 
-- Hệ điều hành: Windows, macOS, Linux
-- RAM: ít nhất 2GB
-- Đĩa cứng trống: ít nhất 100MB
+- Hệ điều hành: Android
 
 ## Đóng góp và Phản hồi
 
