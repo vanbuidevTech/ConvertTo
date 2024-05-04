@@ -51,6 +51,9 @@ android {
 
 
 dependencies {
+
+    implementation("org.apache.logging.log4j:log4j-api:2.11.1")
+    implementation("org.apache.poi:poi:5.2.1")
     implementation("org.apache.pdfbox:pdfbox:2.0.29")
     implementation("com.itextpdf:itext7-core:7.2.2")
     implementation ("org.apache.poi:poi-ooxml:5.2.3")
@@ -68,4 +71,13 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+
+    implementation("com.github.jengelman.gradle.plugins:shadow:7.2.0")
+    implementation("org.ow2.asm:asm:9.0")
+    implementation("org.ow2.asm:asm-commons:9.0")
+    implementation("org.ow2.asm:asm-tree:9.0")
+    implementation("org.ow2.asm:asm-analysis:9.0")
+    implementation("org.ow2.asm:asm-util:9.0")
+    implementation("com.github.johnrengelman.jdk8-forever:jdk8-forever:1.7.10")
 }
