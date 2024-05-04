@@ -51,12 +51,9 @@ android {
 
 
 dependencies {
-    implementation ("org.apache.pdfbox:pdfbox:3.0.0")
-    implementation("org.apache.pdfbox:pdfbox:3.0.0")
+    implementation("org.apache.pdfbox:pdfbox:2.0.29")
     implementation("com.itextpdf:itext7-core:7.2.2")
     implementation ("org.apache.poi:poi-ooxml:5.2.3")
-    implementation ("apache.pdfbox:pdfbox:2.0.28")
-
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.activity:activity-compose:1.9.0")
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))

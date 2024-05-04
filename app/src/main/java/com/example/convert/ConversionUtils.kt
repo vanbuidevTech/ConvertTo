@@ -64,25 +64,16 @@ suspend fun convertDocxToPdf(fileUri: Uri?, context: Context): Boolean {
         // Tạo content stream để viết nội dung vào trang
         val contentStream = PDPageContentStream(pdDocument, page)
 
-        // Thiết lập font chữ và cỡ chữ
-        contentStream.setFont(PDType1Font.HELVETICA, 12f)
-
-        // Di chuyển điểm bắt đầu văn bản
+        // Bắt đầu viết nội dung
         contentStream.beginText()
+        contentStream.setFont(PDType1Font.HELVETICA, 12f)
         contentStream.newLineAtOffset(25f, 700f)
-
-        // Đọc nội dung từ tệp DOCX và viết vào trang PDF
-        xwpfDocument.paragraphs.forEach { paragraph ->
-            val paragraphText = paragraph.text
-            contentStream.showText(paragraphText)
-            contentStream.newLine() // Chuyển sang dòng mới sau mỗi đoạn văn
-        }
-
-        // Kết thúc văn bản
+        contentStream.showText("Hello, PDF!")
         contentStream.endText()
 
-        // Đóng content stream và lưu tài liệu PDF
+     // Đóng content stream sau khi hoàn thành viết nội dung
         contentStream.close()
+
 
         FileOutputStream(pdfFile).use { fos ->
             pdDocument.save(fos)
